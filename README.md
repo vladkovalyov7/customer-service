@@ -39,10 +39,15 @@ npm test
 
 /src
 |-- app.ts
+
 |-- database.ts
+
 |-- anonymizer.ts
+
 |-- customerService.ts
+
 |-- index.ts
+
 |-- interfaces
     |-- anonymizer.ts
     |-- customerRepository.ts

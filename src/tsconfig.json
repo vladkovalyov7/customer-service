@@ -1,19 +1,15 @@
 {
     "compilerOptions": {
-      "target": "ES6", // Or whichever version of JavaScript you're targeting
+      "target": "es6",
       "module": "commonjs",
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "outDir": "./dist",
-      "baseUrl": ".",
-      "typeRoots": [
-        "./node_modules/@types",
-        "./types"
-      ]
+      "types": ["node", "jest"] 
     },
-    "include": ["src/**/*.ts"],
     "exclude": ["node_modules"]
   }
+  
+
   

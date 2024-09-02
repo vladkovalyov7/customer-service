@@ -2,6 +2,7 @@ import { connectToDatabase } from './database';
 import { CustomerRepository } from './repositories/customerRepository';
 import { CustomerAnonymizer } from './anonymizer';
 import { CustomerService } from './customerService';
+import logger from './logger';
 
 async function startApp() {
   await connectToDatabase();
@@ -13,4 +14,7 @@ async function startApp() {
   await customerService.startListeningForChanges();
 }
 
-startApp().catch(console.error);
+startApp().catch((error) => {
+  logger.error('Error starting application: %o', error);
+});
+
